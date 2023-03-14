@@ -1,0 +1,53 @@
+:root {
+  --blue: rgb(29, 155, 240);
+  --font-color: rgb(255, 255, 255);
+  --background-color: rgb(0, 0, 0);
+  --small-text-color: rgb(113, 118, 123);
+  --border-color: rgb(47, 51, 54);
+  --search-background-color: rgb(32, 35, 39);
+  --search-text-color: rgb(231, 233, 234);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Rubik", serif;
+}
+
+body {
+}
+
+.container {
+}
+
+.header,
+.timeline,
+.explore {
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 2fr);
+}

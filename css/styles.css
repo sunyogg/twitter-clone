@@ -1,0 +1,142 @@
+/*****************************************
+HEADER
+*****************************************/
+.header {
+  position: fixed;
+  height: 100vh;
+  width: 21.48%;
+  background-color: black;
+}
+.tweet-button:link,
+.tweet-button:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.6rem 9rem;
+  border-radius: 9rem;
+  color: white;
+  background-color: var(--blue);
+  transition: all 0.3s;
+}
+.tweet-button:hover,
+.tweet-button:active {
+  background-color: rgb(27, 142, 220);
+}
+.wrapper {
+  display: inline-block;
+}
+
+.nav-logo-text {
+  display: flex;
+}
+.nav-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.nav-text {
+}
+.nav-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin: 1.8rem 0 0 1.8rem;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding-left: 1.2rem;
+  gap: 1.8rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 99rem;
+}
+.nav-link:link,
+.nav-link:visited {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  background-color: rgba(231, 233, 234, 0.1);
+}
+
+.nav-icon {
+  fill: white;
+}
+
+.self-profile {
+  color: white;
+}
+.username {
+}
+
+/*****************************************
+TIMELINE-EXPLORE
+*****************************************/
+.timeline-explore {
+  margin-left: calc(21.48%);
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+}
+/*****************************************
+TIMELINE
+*****************************************/
+.timeline {
+  background-color: lightyellow;
+  overflow-y: scroll;
+  width: 100%;
+  position: relative;
+}
+/* Hide the scroll bar but the keep the scrolling functionality */
+.timeline::-webkit-scrollbar {
+  display: none;
+}
+
+.fixed-head-timeline {
+  height: 10rem;
+  position: fixed;
+  width: 47.2%;
+  background-color: aquamarine;
+}
+
+.tweet-container {
+  margin-top: 10rem;
+  height: 100%;
+}
+
+.tweets {
+  height: 40%;
+  width: 95%;
+  background-color: black;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.home {
+  display: block;
+}
+
+.following-for-you {
+}
+
+/*****************************************
+EXPLORE
+*****************************************/
+.explore {
+  background-color: lightgreen;
+}
+
+/* 
+
+
+.timeline-explore {
+grid-template-columns: 59.7fr 40.3fr;
+} 
+
+*/
