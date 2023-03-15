@@ -17,6 +17,7 @@
 html {
   font-size: 62.5%;
   font-family: "Rubik", serif;
+  color: white;
 }
 
 body {
@@ -33,6 +34,12 @@ body {
 
 .flex {
   display: flex;
+}
+.alignJ {
+  justify-content: center;
+}
+.alignI {
+  align-items: center;
 }
 .flex-column {
   display: flex;
@@ -70,6 +77,41 @@ body {
   border-radius: 50%;
 }
 .icon-more {
+  width: 2rem;
+  height: 2rem;
+}
+
+.grey-text {
+  color: var(--small-text-color);
+}
+
+.big-text {
+  font-size: 2rem;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.padding {
+  padding: 0.8rem 1.2rem;
+}
+
+.border-top {
+  border-top: 1px solid var(--border-color);
+}
+.border-right {
+  border-right: 1px solid var(--border-color);
+}
+.border-bottom {
+  border-bottom: 1px solid var(--border-color);
+}
+.border-left {
+  border-left: 1px solid var(--border-color);
+}
+
+.my-tweet-icon {
+  fill: var(--blue);
   width: 2rem;
   height: 2rem;
 }

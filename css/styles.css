@@ -7,20 +7,28 @@ HEADER
   width: 21.48%;
   background-color: black;
 }
-.tweet-button:link,
-.tweet-button:visited {
+.tweet-button-big:link,
+.tweet-button-small:link,
+.tweet-button-big:visited,
+.tweet-button-small:visited {
   display: inline-block;
   text-decoration: none;
   font-size: 1.8rem;
   font-weight: 600;
-  padding: 1.3rem 9rem;
+  padding: 0.8rem 1.6rem;
   border-radius: 9rem;
   color: white;
   background-color: var(--blue);
   transition: all 0.3s;
 }
-.tweet-button:hover,
-.tweet-button:active {
+.tweet-button-big:link,
+.tweet-button-big:visited {
+  padding: 1.3rem 9rem;
+}
+.tweet-button-big:hover,
+.tweet-button-big:active,
+.tweet-button-small:hover,
+.tweet-button-small:active {
   background-color: rgb(27, 142, 220);
 }
 
@@ -37,6 +45,7 @@ HEADER
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  list-style: none;
 }
 
 /* li a */
@@ -99,7 +108,7 @@ TIMELINE-EXPLORE
 TIMELINE
 *****************************************/
 .timeline {
-  background-color: lightyellow;
+  background-color: black;
   overflow-y: scroll;
   width: 100%;
   position: relative;
@@ -110,10 +119,52 @@ TIMELINE
 }
 
 .fixed-head-timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 10rem;
   position: fixed;
-  width: 47.2%;
-  background-color: aquamarine;
+  width: 46.9%;
+  background-color: rgba(0, 0, 0, 50%);
+}
+
+.following-for-you {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.following-for-you a:link,
+.following-for-you a:visited {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  padding: 1.2rem;
+  text-align: center;
+}
+.following-for-you a:hover,
+.following-for-you a:active {
+  background-color: rgba(231, 233, 234, 0.1);
+  /* box-shadow: inset 0rem -0.8rem 0rem 0rem rgb(27, 142, 220); */
+}
+.my-tweet {
+}
+.pfp-happening {
+  gap: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.my-tweet-icons {
+  padding: 0 2rem;
+  gap: 1.4rem;
+  margin-left: 5.6rem;
+  margin-bottom: 1rem;
+}
+.my-tweet-icon {
+}
+.tweet-button-small {
+  margin-left: auto;
 }
 
 .tweet-container {
@@ -133,14 +184,11 @@ TIMELINE
   display: block;
 }
 
-.following-for-you {
-}
-
 /*****************************************
 EXPLORE
 *****************************************/
 .explore {
-  background-color: lightgreen;
+  background-color: black;
 }
 
 /* 
