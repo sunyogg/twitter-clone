@@ -5,31 +5,7 @@ HEADER
   position: fixed;
   height: 100vh;
   width: 21.48%;
-  background-color: black;
-}
-.tweet-button-big:link,
-.tweet-button-small:link,
-.tweet-button-big:visited,
-.tweet-button-small:visited {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 1.8rem;
-  font-weight: 600;
-  padding: 0.8rem 1.6rem;
-  border-radius: 9rem;
-  color: white;
-  background-color: var(--blue);
-  transition: all 0.3s;
-}
-.tweet-button-big:link,
-.tweet-button-big:visited {
-  padding: 1.3rem 9rem;
-}
-.tweet-button-big:hover,
-.tweet-button-big:active,
-.tweet-button-small:hover,
-.tweet-button-small:active {
-  background-color: rgb(27, 142, 220);
+  background-color: var(--background-color);
 }
 
 .nav {
@@ -74,12 +50,6 @@ HEADER
   background-color: rgba(231, 233, 234, 0.1);
 }
 
-.nav-icon {
-  fill: white;
-  width: 3.2rem;
-  height: 3.2rem;
-}
-
 .self-profile {
   display: flex;
   align-items: center;
@@ -108,11 +78,12 @@ TIMELINE-EXPLORE
 TIMELINE
 *****************************************/
 .timeline {
-  background-color: black;
+  background-color: var(--background-color);
   overflow-y: scroll;
   width: 100%;
   position: relative;
 }
+
 /* Hide the scroll bar but the keep the scrolling functionality */
 .timeline::-webkit-scrollbar {
   display: none;
@@ -146,10 +117,11 @@ TIMELINE
 .following-for-you a:hover,
 .following-for-you a:active {
   background-color: rgba(231, 233, 234, 0.1);
-  /* box-shadow: inset 0rem -0.8rem 0rem 0rem rgb(27, 142, 220); */
 }
+
 .my-tweet {
 }
+
 .pfp-happening {
   gap: 1.4rem;
   margin-bottom: 1.4rem;
@@ -161,8 +133,7 @@ TIMELINE
   margin-left: 5.6rem;
   margin-bottom: 1rem;
 }
-.my-tweet-icon {
-}
+
 .tweet-button-small {
   margin-left: auto;
 }
@@ -173,29 +144,139 @@ TIMELINE
 }
 
 .tweets {
-  height: 40%;
-  width: 95%;
-  background-color: black;
-  margin: 0 auto;
-  margin-top: 3rem;
-}
-
-.home {
-  display: block;
 }
 
 /*****************************************
 EXPLORE
 *****************************************/
 .explore {
+  background-color: var(--background-color);
+  overflow-y: scroll;
+}
+.explore::-webkit-scrollbar {
+  display: none;
+}
+.search-box {
+  position: fixed;
+  gap: 2.4rem;
+  margin: 1.8rem 1.8rem 0 1.8rem;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: var(--search-background-color);
+  border-radius: 9rem;
+}
+.happening-label {
+  width: 100%;
+}
+.happening-input {
+  border: none;
+  width: 100%;
+  padding: 2rem 0rem;
+  padding-left: 0rem;
+  background-color: var(--background-color);
+}
+
+.happening-input::placeholder {
+  color: var(--small-text-color);
+  font-size: 2rem;
+}
+
+.search-input {
+  display: inline-block;
+  border: none;
+  padding: 0.5rem 16rem;
+  padding-left: 0rem;
+  background-color: var(--search-background-color);
+  color: white;
+}
+.search-input::placeholder {
+  color: var(--small-text-color);
+  font-size: 1.6rem;
+}
+.happening-follow {
+  margin: 8rem 1.2rem 1.2rem 1.2rem;
+}
+.whats-happening,
+.who-to-follow {
+  padding: 1.2rem 0 1.2rem 0;
+  background-color: var(--explore-background-color);
+  border-radius: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+.trending-box,
+.follow-box {
+  padding: 1rem 1.2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.trending-box:hover,
+.trending-box:active,
+.follow-box:hover,
+.follow-box:active {
+  background-color: var(--search-background-color);
+}
+.trending-link {
+  text-decoration: none;
+  color: white;
+  gap: 0.5rem;
+}
+.trend-info {
+  font-size: 1.2rem;
+}
+.the-trend {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.trend-link {
+  color: var(--blue);
+}
+
+.footer-flex {
+}
+.footer-flex-big {
+  gap: 0.6rem;
+  margin-left: 1.2rem;
+  margin-bottom: 15rem;
+}
+.footer-flex {
+  gap: 1.2rem;
+}
+.footer-flex a:link,
+.footer-flex a:visited {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--small-text-color);
+  margin-bottom: 1px;
+}
+
+.footer-flex a:hover,
+.footer-flex a:active {
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+.trademark {
+  font-size: 1.2rem;
+  color: var(--small-text-color);
+}
+
+.message-box {
+  position: fixed;
+  bottom: 0vh;
+  z-index: 999;
+  width: 40rem;
+  padding: 1rem 2rem 1rem 2rem;
   background-color: black;
+  border-radius: 2rem 2rem 0rem 0rem;
+  margin: 0rem 10rem 0rem 0rem;
+  box-shadow: 0px 0px 8px 4px rgba(231, 233, 234, 0.2);
+}
+
+.message-logos {
+  margin-left: auto;
+  gap: 2.4rem;
 }
 
 /* 
-
-
 .timeline-explore {
 grid-template-columns: 59.7fr 40.3fr;
 } 
-
 */
