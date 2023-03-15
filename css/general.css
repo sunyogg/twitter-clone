@@ -51,3 +51,25 @@ body {
 .grid--4-cols {
   grid-template-columns: repeat(4, 2fr);
 }
+
+.wrapper {
+  display: inline-block;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.username {
+  color: var(--small-text-color);
+  font-size: 1.4rem;
+}
+.pfps {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+.icon-more {
+  width: 2rem;
+  height: 2rem;
+}
