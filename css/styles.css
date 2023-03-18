@@ -97,6 +97,7 @@ TIMELINE
   position: fixed;
   width: 46.9%;
   background-color: rgba(0, 0, 0, 50%);
+  backdrop-filter: blur(3px);
 }
 
 .following-for-you {
@@ -134,18 +135,125 @@ TIMELINE
   margin-bottom: 1rem;
 }
 
+.tweet-icons {
+  justify-content: space-between;
+}
+
 .tweet-button-small {
   margin-left: auto;
 }
 
-.tweet-container {
+.self-tweet-container {
   margin-top: 10rem;
-  height: 100%;
+  width: 100%;
 }
 
 .tweets {
 }
 
+/*****************************************
+TWEETS
+*****************************************/
+.tweets-container {
+}
+.tweet-box {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 1.8rem;
+  padding: 1.2rem;
+  background-color: black;
+}
+.tweet-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.tweet-head {
+  display: flex;
+  justify-content: space-between;
+  height: 1.8rem;
+}
+.tweet-content {
+  grid-column: 2/3;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+.tweet-content p:not(:last-child) {
+  display: block;
+  margin-bottom: 1.2rem;
+}
+
+/***********************
+TWEET-ICON-TEXT
+************************/
+
+.tweet-icon-link:link,
+.tweet-icon-link:visited {
+  color: var(--small-text-color);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.tweet-icon-link:hover.retweet-area span {
+  color: rgb(0, 186, 124);
+}
+.tweet-icon-link:hover.like-area span {
+  color: rgb(249, 24, 128);
+}
+.tweet-icon-link:hover.views-area span,
+.tweet-icon-link:hover.comments-area span {
+  color: var(--blue);
+}
+
+.tweet-icon-link:hover .retweet {
+  fill: rgb(0, 186, 124);
+}
+.tweet-icon-link:hover .heart {
+  fill: rgb(249, 24, 128);
+}
+.tweet-icon-link:hover .views,
+.tweet-icon-link:hover .share,
+.tweet-icon-link:hover .comments {
+  fill: var(--blue);
+}
+
+.tweet-icon {
+  height: 1.8rem;
+  width: 1.8rem;
+  fill: var(--small-text-color);
+}
+.comment-icon-box,
+.retweet-icon-box,
+.like-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6em;
+  border-radius: 50%;
+}
+.tweet-icon-link:hover .comment-icon-box {
+  background-color: rgba(29, 156, 240, 0.15);
+}
+
+.tweet-icon-link:hover .retweet-icon-box {
+  background-color: rgba(0, 186, 124, 0.15);
+}
+.tweet-icon-link:hover .like-icon-box {
+  background-color: rgba(249, 24, 128, 0.15);
+}
+.comments {
+}
+.retweet {
+}
+.retweet {
+}
+.heart {
+}
+.views {
+}
+.share {
+}
 /*****************************************
 EXPLORE
 *****************************************/
@@ -172,6 +280,7 @@ EXPLORE
   width: 100%;
   padding: 2rem 0rem;
   padding-left: 0rem;
+  color: white;
   background-color: var(--background-color);
 }
 
@@ -214,6 +323,7 @@ EXPLORE
 .follow-box:active {
   background-color: var(--search-background-color);
 }
+
 .trending-link {
   text-decoration: none;
   color: white;
@@ -224,10 +334,13 @@ EXPLORE
 }
 .the-trend {
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 .trend-link {
   color: var(--blue);
+}
+.trend-link:hover {
+  text-decoration: underline;
 }
 
 .footer-flex {
@@ -235,7 +348,7 @@ EXPLORE
 .footer-flex-big {
   gap: 0.6rem;
   margin-left: 1.2rem;
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
 }
 .footer-flex {
   gap: 1.2rem;

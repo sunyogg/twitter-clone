@@ -268,4 +268,14 @@ viewBox="0 0 24 24"
 ----- LEARNINGS
   - calc(21.8%)
   - wrapper
+  - Sometimes there is box B inside a box A (sizeOf A > sizeOfB), and you want to change the
+    hover state of B while hovering on A.
+    .A:hover .B{
+      property-of-b: value;
+    }
+
+  - AND SELECTOR
+    .tweet-icon-link:hover.like-area span {
+      color: rgb(249, 24, 128);
+    }
 

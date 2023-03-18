@@ -22,6 +22,7 @@ html {
 }
 
 body {
+  background-color: black;
 }
 
 .container {
@@ -46,12 +47,19 @@ body {
   display: flex;
   flex-direction: column;
 }
+.flex-gap-small {
+  gap: 0.6rem;
+}
+.flex-gap-medium {
+  gap: 1.2rem;
+}
 
 .grid {
   display: grid;
 }
 .grid--2-cols {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr;
 }
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
@@ -92,13 +100,17 @@ body {
 .tweet-button-follow:visited {
   display: inline-block;
   text-decoration: none;
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 1.6rem;
+  font-weight: 500;
   padding: 0.6rem 1.8rem;
   border-radius: 9rem;
   color: black;
   background-color: white;
   transition: all 0.3s;
+}
+.tweet-button-follow:hover,
+.tweet-button-follow:active {
+  background-color: rgb(208, 206, 206);
 }
 
 .trend-show-more {
@@ -109,6 +121,20 @@ body {
 .name {
   font-size: 1.5rem;
   font-weight: 500;
+}
+.name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.name-link:link,
+.name-link:visited {
+  color: white;
+  text-decoration: none;
+}
+.name-link:hover,
+.name-link:active {
+  text-decoration: underline;
 }
 .username {
   color: var(--small-text-color);
@@ -144,6 +170,21 @@ body {
   width: 2rem;
   height: 2rem;
   fill: var(--small-text-color);
+}
+
+.icon-more-link:link,
+.icon-more-link:visited {
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-more-link:hover {
+  background-color: rgba(29, 156, 240, 0.15);
+}
+.icon-more-link:hover .icon-more-grey {
+  fill: var(--blue);
 }
 
 .grey-text {
@@ -183,6 +224,15 @@ body {
   fill: var(--blue);
   width: 2rem;
   height: 2rem;
+}
+.my-tweet-icon-link:link,
+.my-tweet-icon-link:visited {
+  padding: 0.5rem;
+}
+.my-tweet-icon-link:hover,
+.my-tweet-icon-link:active {
+  background-color: rgba(29, 156, 240, 0.15);
+  border-radius: 50%;
 }
 
 .grey-icon {
