@@ -97,7 +97,8 @@ TIMELINE
   position: fixed;
   width: 46.9%;
   background-color: rgba(0, 0, 0, 50%);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .following-for-you {
@@ -135,10 +136,6 @@ TIMELINE
   margin-bottom: 1rem;
 }
 
-.tweet-icons {
-  justify-content: space-between;
-}
-
 .tweet-button-small {
   margin-left: auto;
 }
@@ -162,12 +159,13 @@ TWEETS
   grid-template-rows: auto auto;
   column-gap: 1.8rem;
   padding: 1.2rem;
+  padding-top: 1.8rem;
   background-color: black;
 }
 .tweet-main {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 0.8rem;
 }
 .tweet-head {
   display: flex;
@@ -184,6 +182,24 @@ TWEETS
   margin-bottom: 1.2rem;
 }
 
+.tweet-content-img {
+  width: 100%;
+}
+.data-img-2 {
+  object-fit: contain;
+  align-self: stretch;
+  object-fit: cover;
+}
+.data-img-3 {
+  grid-row: 1/3;
+  align-self: stretch;
+  object-fit: cover;
+}
+.data-img-1 {
+  align-self: stretch;
+  object-fit: cover;
+}
+
 /***********************
 TWEET-ICON-TEXT
 ************************/
@@ -193,6 +209,15 @@ TWEET-ICON-TEXT
   color: var(--small-text-color);
   font-size: 1.2rem;
   text-decoration: none;
+  transition: all 1s;
+}
+
+.tweet-icons {
+  justify-content: space-between;
+  transition: all 0.3s;
+}
+.retweet-area span {
+  transition: all 1s;
 }
 
 .tweet-icon-link:hover.retweet-area span {
@@ -222,6 +247,7 @@ TWEET-ICON-TEXT
   height: 1.8rem;
   width: 1.8rem;
   fill: var(--small-text-color);
+  transition: all 0.3s;
 }
 .comment-icon-box,
 .retweet-icon-box,

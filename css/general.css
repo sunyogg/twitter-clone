@@ -58,8 +58,8 @@ body {
   display: grid;
 }
 .grid--2-cols {
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 25.1rem);
+  grid-template-rows: repeat(2, 14.1rem);
 }
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
@@ -239,4 +239,15 @@ body {
   fill: var(--small-text-color);
   width: 2rem;
   height: 2rem;
+}
+
+.hashtag:link,
+.hashtag:visited {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.hashtag:hover,
+.hashtag:active {
+  text-decoration: underline;
 }
