@@ -1,3 +1,4 @@
 # twitter-clone
 
-https://sunyogg.github.io/twitter-clone/
+https://twitter-clone-sunyog.netlify.app
+
