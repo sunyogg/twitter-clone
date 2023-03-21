@@ -40,14 +40,14 @@ HEADER
 .self-profile:visited {
   font-size: 1.8rem;
   text-decoration: none;
-  color: white;
+  color: black;
   transition: all 0.3s;
 }
 .nav-link:hover,
 .nav-link:active,
 .self-profile:hover,
 .self-profile:active {
-  background-color: rgba(231, 233, 234, 0.1);
+  background-color: var(--search-background-color);
 }
 
 .self-profile {
@@ -96,7 +96,7 @@ TIMELINE
   height: 10rem;
   position: fixed;
   width: 46.9%;
-  background-color: rgba(0, 0, 0, 50%);
+  background-color: rgba(255, 255, 255, 50%);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
@@ -111,14 +111,14 @@ TIMELINE
 .following-for-you a:link,
 .following-for-you a:visited {
   text-decoration: none;
-  color: white;
+  color: black;
   width: 100%;
   padding: 1.2rem;
   text-align: center;
 }
 .following-for-you a:hover,
 .following-for-you a:active {
-  background-color: rgba(231, 233, 234, 0.1);
+  background-color: rgba(102, 102, 103, 0.1);
 }
 
 .my-tweet {
@@ -159,7 +159,7 @@ TWEETS
   grid-template-rows: auto auto;
   column-gap: 1.8rem;
   padding: 1.8rem 1.2rem 0.5rem 1.2rem;
-  background-color: black;
+  background-color: var(--background-color);
 }
 .tweet-main {
   display: flex;
@@ -305,7 +305,7 @@ EXPLORE
   width: 100%;
   padding: 2rem 0rem;
   padding-left: 0rem;
-  color: white;
+  color: black;
   background-color: var(--background-color);
 }
 
@@ -320,7 +320,7 @@ EXPLORE
   padding: 0.5rem 16rem;
   padding-left: 0rem;
   background-color: var(--search-background-color);
-  color: white;
+  color: black;
 }
 .search-input::placeholder {
   color: var(--small-text-color);
@@ -351,7 +351,7 @@ EXPLORE
 
 .trending-link {
   text-decoration: none;
-  color: white;
+  color: black;
   gap: 0.5rem;
 }
 .trend-info {
@@ -402,10 +402,10 @@ EXPLORE
   z-index: 999;
   width: 40rem;
   padding: 1rem 2rem 1rem 2rem;
-  background-color: black;
+  background-color: white;
   border-radius: 2rem 2rem 0rem 0rem;
   margin: 0rem 10rem 0rem 0rem;
-  box-shadow: 0px 0px 8px 4px rgba(231, 233, 234, 0.2);
+  box-shadow: 0px 0px 8px 4px rgba(231, 233, 234, 0.8);
 }
 
 .message-logos {
